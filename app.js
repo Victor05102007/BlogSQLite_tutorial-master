@@ -105,7 +105,7 @@ app.post("/cadastro", (req, res) => {
     if (row) {
       // A variável 'row' irá retornar os dados do banco de dados,
       // executado através do SQL, variável query
-      res.send("Usuário já cadastrado, refaça o cadastro");
+      res.redirect("pages/cadastro");
     } else {
       // 3. Se usuário não existe no banco, cadastrá-lo
       const insertQuery =
@@ -113,7 +113,7 @@ app.post("/cadastro", (req, res) => {
       db.run(insertQuery, [username, password, email, tel, cpf, rg], (err) => {
         // Inserir a lógica do INSERT
         if (err) throw err;
-        res.send("Usuário cadastrado com sucesso");
+        res.redirect("pages/usuarioCadastrado");
       });
     }
   });
@@ -155,7 +155,7 @@ app.post("/login", (req, res) => {
       res.redirect("/dashboard");
     } // Se não, envia mensagem de erro (Usuário Inválido)
     else {
-      res.send("Usuário Inválido!");
+      res.send("pages/usuarioFalho");
     }
   });
 });
