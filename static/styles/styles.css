@@ -19,7 +19,7 @@
 
 body {
   height: 100vh;
-  background-color: #375534;
+  background-color: #272c47;
 
   display: flex;
   flex-direction: column;
@@ -30,7 +30,7 @@ body {
 header {
   width: 100%;
   padding: 10px 15px;
-  background-color: #0f2a1d;
+  background-color: #11574d;
   position: absolute;
   top: 0;
   left: 0;
@@ -167,7 +167,7 @@ header nav a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(29, 90, 87, 0.7);
   z-index: 1;
 }
 
@@ -208,14 +208,14 @@ header nav a:hover {
 #cadastroForm h1 {
   font-family: "JoseFins";
   font-size: 2em;
-  color: #0f2a1d;
+  color: #15663f;
 }
 
 #cadastroForm p {
   font-family: "Copperplate";
   font-size: 11px;
   font-style: italic;
-  color: #0f2a1d;
+  color: #146d74;
 }
 
 #cadastroForm .input_data {
@@ -244,7 +244,7 @@ header nav a:hover {
   outline: 0;
   background-color: transparent;
   border-radius: 0;
-  border-bottom: 1px solid #0f2a1d;
+  border-bottom: 1px solid #174869;
   color: #0f2a1d;
 }
 
@@ -257,7 +257,7 @@ header nav a:hover {
   transform: translateY(-50%);
   transition: all 0.5s ease;
   z-index: 1;
-  color: #0f2a1d;
+  color: #1e2f8f;
 }
 
 #cadastroForm .input_data input:focus + label,
